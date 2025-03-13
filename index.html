@@ -33,52 +33,56 @@
 
         /* Barre de navigation à gauche */
 
+        /* Style de la colonne latérale */
         .sidebar {
-            width: 250px;
-            background-color: #c6eae8; /* 🌿 Jolie couleur bleu-vert */
-            color: #333; /* Texte foncé pour un bon contraste */
-            height: calc(100vh - 80px); /* Ajusté sous la bannière */
-            padding: 20px;
-            position: fixed;
-            top: 80px; /* Décalé sous la bannière */
-            left: 15px; /* 🔹 Décalé légèrement du bord */
+            width: 250px; /* Largeur de la colonne */
+            background-color: #eeeeee; /* Fond gris clair similaire */
+            color: #333; /* Texte sombre */
+            height: 100vh; /* Colonne de hauteur 100% de la page */
+            position: fixed; /* Colonne fixe sur le côté */
+            top: 0;
+            left: 0;
+            padding: 30px;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
         }
         
-        /* Style du menu */
+        /* Titre de la colonne */
         .sidebar h2 {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 20px;
-            color: #2c3e50; /* Un bleu foncé élégant */
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: #333;
         }
         
+        /* Liste des éléments dans la colonne */
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
         
         .sidebar ul li {
-            margin: 15px 0;
+            margin: 20px 0; /* Espacement vertical */
         }
         
+        /* Liens de la colonne */
         .sidebar ul li a {
-            color: #2c3e50; /* Bleu foncé pour un bon contraste */
+            color: #333;
             text-decoration: none;
+            font-size: 18px;
             display: block;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.7); /* Fond clair semi-transparent */
-            border-radius: 8px; /* Coins arrondis */
+            background-color: transparent;
+            border-radius: 5px;
             text-align: center;
-            font-weight: bold;
-            transition: 0.3s ease-in-out;
+            transition: 0.3s;
         }
         
+        /* Changement au survol des liens */
         .sidebar ul li a:hover {
-            background-color: #b0ddd8; /* 🔥 Effet au survol */
-            color: #000;
-            transform: scale(1.05); /* Effet zoom */
+            background-color: #d3d3d3; /* Fond gris clair au survol */
+            color: #007bff; /* Changer la couleur du texte au survol */
         }
-        
 
         /* Contenu principal */
         .content {
