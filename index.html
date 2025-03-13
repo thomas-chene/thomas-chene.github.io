@@ -32,45 +32,55 @@
         }
 
         /* Barre de navigation à gauche */
+
         .sidebar {
             width: 250px;
-            background: #c6eae8 /* Dégradé bleu clair -> rose */
-            color: black;
-            height: calc(100vh - 80px); /* Ajusté pour descendre sous la bannière */
+            background-color: #c6eae8; /* 🌿 Jolie couleur bleu-vert */
+            color: #333; /* Texte foncé pour un bon contraste */
+            height: calc(100vh - 80px); /* Ajusté sous la bannière */
             padding: 20px;
-            margin-left:10px;
             position: fixed;
-            top: 80px; /* Décalage sous la bannière */
+            top: 80px; /* Décalé sous la bannière */
+            left: 15px; /* 🔹 Décalé légèrement du bord */
+            border-radius: 15px; /* 🌟 Coins arrondis pour un design moderne */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✨ Ombre pour effet en relief */
         }
-
+        
+        /* Style du menu */
         .sidebar h2 {
             text-align: center;
             margin-bottom: 20px;
             font-size: 20px;
+            color: #2c3e50; /* Un bleu foncé élégant */
         }
-
+        
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
-
+        
         .sidebar ul li {
             margin: 15px 0;
         }
-
+        
         .sidebar ul li a {
-            color: black;
+            color: #2c3e50; /* Bleu foncé pour un bon contraste */
             text-decoration: none;
             display: block;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fond clair semi-transparent */
+            border-radius: 8px; /* Coins arrondis */
             text-align: center;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
         }
-
+        
         .sidebar ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: #b0ddd8; /* 🔥 Effet au survol */
+            color: #000;
+            transform: scale(1.05); /* Effet zoom */
         }
+        
 
         /* Contenu principal */
         .content {
